@@ -3,7 +3,7 @@ export function RespositoryItem(props) {
     <li>
       <strong>{ props.repository?.name ?? 'Default' }</strong>
       <p>{ props.repository?.description ?? 'Default' }</p>
-      <a href='#'>{ props.repository?.link ?? 'Default' }</a>
+      <a href='#'>{ props.repository?.html_url ?? 'Default' }</a>
     </li>
   );
 }
